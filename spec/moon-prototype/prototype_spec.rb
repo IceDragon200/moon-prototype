@@ -20,8 +20,20 @@ describe Fixtures::MyPrototypeObject do
 end
 
 describe Fixtures::MyPrototypeObjectSubClass do
-  it 'its should the thing class attr' do
+  it 'should the thing class attr' do
     expect(described_class.things).to eq(['OtherThingy'])
     expect(described_class.all_things).to eq(['Thingy', 'OtherThingy'])
+  end
+
+  it 'should yield each thing' do
+    result = []
+    described_class.each_thing do |str|
+      result << str
+    end
+    expect(result).to eq(['Thingy', 'OtherThingy'])
+  end
+
+  it 'should have a all_map_of_things' do
+    expect(described_class.all_map_of_things).to eq({ scrap: 1, junk: 1 })
   end
 end
