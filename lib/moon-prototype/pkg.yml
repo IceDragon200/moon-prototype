@@ -1,0 +1,6 @@
+---
+name: Prototype
+author: IceDragon200 (Corey Powell) (mistdragon100@gmail.com)
+description: Extension for creating class-variable like attributes
+require: _basalt.rb
+deps: []
