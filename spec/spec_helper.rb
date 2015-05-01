@@ -13,7 +13,7 @@ module Fixtures
   class MyPrototypeObject
     class << self
       prototype_attr :thing
-      prototype_attr :other_thing
+      prototype_attr :other_thing, default: proc { [] }
     end
 
     things << 'Thingy'
