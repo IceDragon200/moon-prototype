@@ -2,15 +2,21 @@ module Moon
   module Prototype
     # @param [String, Symbol] singular_name
     # @return [Symbol]
-    # @api
+    # @api private
     def self.plural_sym(singular_name)
       singular_name.to_s.pluralize.to_sym
     end
 
+    # @param [String, Symbol] singular_name
+    # @return [Symbol]
+    # @api private
     def self.varname_sym(singular_name)
       "@__prototype_#{plural_sym(singular_name)}__".to_sym
     end
 
+    # @param [String, Symbol] singular_name
+    # @return [Symbol]
+    # @api private
     def self.collective_sym(singular_name)
       #"my_#{plural_sym(singular_name)}".to_sym
       # originally I planned to name each instance level attr as my_<name>,
@@ -18,16 +24,22 @@ module Moon
       "#{plural_sym(singular_name)}".to_sym
     end
 
+    # @param [String, Symbol] singular_name
+    # @return [Symbol]
+    # @api private
     def self.enum_sym(singular_name)
       "each_#{singular_name}".to_sym
     end
 
+    # @param [String, Symbol] singular_name
+    # @return [Symbol]
+    # @api private
     def self.all_sym(singular_name)
       "all_#{plural_sym(singular_name)}"
     end
 
     # @return [Symbol]
-    # @api
+    # @api private
     private def define_prototype_enum(singular_name, options = {})
       my_name = Prototype.collective_sym singular_name
       enum_name = Prototype.enum_sym singular_name
@@ -45,7 +57,7 @@ module Moon
     end
 
     # @return [Symbol]
-    # @api
+    # @api private
     private def define_prototype_instance_collection(singular_name, options = {})
       plural_name = Prototype.plural_sym singular_name
       variable_name = Prototype.varname_sym singular_name
