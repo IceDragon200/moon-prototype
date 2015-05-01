@@ -1,4 +1,4 @@
-require_relative 'lib/prototype/version'
+require_relative 'lib/moon-prototype/version'
 
 Gem::Specification.new do |s|
   s.name        = 'moon-prototype'

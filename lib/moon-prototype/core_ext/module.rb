@@ -1,4 +1,4 @@
-require 'std/mixins/prototype/prototype'
+require 'moon-prototype/prototype'
 
 class Module
   include Moon::Prototype

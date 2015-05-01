@@ -1,1 +1,1 @@
-require 'std/mixins/prototype/core_ext/module'
+require 'moon-prototype/core_ext/module'
