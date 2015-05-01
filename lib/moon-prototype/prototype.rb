@@ -1,4 +1,9 @@
 module Moon
+  # Mixin for defining special shared, class-attributes
+  # These attributes are available down the class line, and each child can
+  # add their own values to the attribute, without breaking the parent.
+  # prototype attributes are however, collective, they are an Array or Hash
+  # of values that can be merged to together to form one collection.
   module Prototype
     # @param [String, Symbol] singular_name
     # @return [Symbol]
@@ -99,9 +104,22 @@ module Moon
 
     # Prototype attributes are Arrays of values which belong to a set of classes.
     # They are not class variables which are shared by the entire ancestor line.
+    # Several methods are created when a prototype_attr is created.
+    # A pluralized form of the given `singular_name` is created to denote
+    # the current class values.
+    # all_<plural> for all values in the current class line
+    # each_<singular> for iterating all values
     #
     # @param [String, Symbol] singular_name
-    # @return [Void]
+    # @return [void]
+    #
+    # @example
+    #   prototype_attr :field
+    #   fields     #=> []
+    #   all_fields #=> []
+    #   each_field do |f|
+    #     # do stuff
+    #   end
     def prototype_attr(singular_name, options = {})
       pn = define_prototype_instance_collection singular_name, options
       enum_name = define_prototype_enum singular_name, options
