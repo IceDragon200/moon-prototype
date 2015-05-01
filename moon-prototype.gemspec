@@ -1,12 +1,12 @@
-require_relative 'lib/data_model/version'
+require_relative 'lib/prototype/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'moon-data_model'
-  s.summary     = 'Moon DataModel package.'
-  s.description = 'Moon DataModel package, extracted the moon-packages.'
-  s.homepage    = 'https://github.com/IceDragon200/moon-data_model'
+  s.name        = 'moon-prototype'
+  s.summary     = 'Moon Prototype package.'
+  s.description = 'Moon Prototype package, extracted the moon-packages.'
+  s.homepage    = 'https://github.com/IceDragon200/moon-prototype'
   s.email       = 'mistdragon100@gmail.com'
-  s.version     = Moon::DataModel::Version::STRING
+  s.version     = Moon::Prototype::Version::STRING
   s.platform    = Gem::Platform::RUBY
   s.date        = Time.now.to_date.to_s
   s.license     = 'MIT'
