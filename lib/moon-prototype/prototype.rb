@@ -102,7 +102,7 @@ module Moon
     #
     # @param [String, Symbol] singular_name
     # @return [Void]
-    private def prototype_attr(singular_name, options = {})
+    def prototype_attr(singular_name, options = {})
       pn = define_prototype_instance_collection singular_name, options
       enum_name = define_prototype_enum singular_name, options
       # all prototype attributes
