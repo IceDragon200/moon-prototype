@@ -1,9 +1,9 @@
 Moon Prototype
-===============
-[![Build Status](https://travis-ci.org/IceDragon200/moon-prototype.svg?branch=master)](https://travis-ci.org/IceDragon200/moon-prototype)
-[![Test Coverage](https://codeclimate.com/github/IceDragon200/moon-prototype/badges/coverage.svg)](https://codeclimate.com/github/IceDragon200/moon-prototype)
-[![Inline docs](http://inch-ci.org/github/IceDragon200/moon-prototype.svg?branch=master)](http://inch-ci.org/github/IceDragon200/moon-prototype)
-[![Code Climate](https://codeclimate.com/github/IceDragon200/moon-prototype/badges/gpa.svg)](https://codeclimate.com/github/IceDragon200/moon-prototype)
+==============
+[![Build Status](https://travis-ci.org/polyfox/moon-prototype.svg?branch=master)](https://travis-ci.org/polyfox/moon-prototype)
+[![Test Coverage](https://codeclimate.com/github/polyfox/moon-prototype/badges/coverage.svg)](https://codeclimate.com/github/polyfox/moon-prototype)
+[![Inline docs](http://inch-ci.org/github/polyfox/moon-prototype.svg?branch=master)](http://inch-ci.org/github/polyfox/moon-prototype)
+[![Code Climate](https://codeclimate.com/github/polyfox/moon-prototype/badges/gpa.svg)](https://codeclimate.com/github/polyfox/moon-prototype)
 
 This was extracted from Moon's prototype package.
 
