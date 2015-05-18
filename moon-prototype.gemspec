@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = 'moon-prototype'
   s.summary     = 'Moon Prototype package.'
   s.description = 'Moon Prototype package, extracted the moon-packages.'
-  s.homepage    = 'https://github.com/IceDragon200/moon-prototype'
+  s.homepage    = 'https://github.com/polyfox/moon-prototype'
   s.email       = 'mistdragon100@gmail.com'
   s.version     = Moon::Prototype::Version::STRING
   s.platform    = Gem::Platform::RUBY
