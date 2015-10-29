@@ -90,7 +90,7 @@ module Moon
 
       define_method enum_name do |&block|
         # if the block given is invalid, return an Enumerator instead
-        return to_enum enum_name unless block
+        return to_enum __method__ unless block
         # call each instance prototype_attr
         prototype_call my_name do |objs|
           objs.each do |*a|
